@@ -1,0 +1,32 @@
+.month-list{
+  height: 98rpx;
+}
+
+.month-item{
+  width: 80rpx;
+}
+
+
+.active{
+  color: #ea3814;
+}
+
+.month-scroll{
+  padding-bottom: 10rpx;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.current-year{
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.detail-data{
+  text-align: center;
+  padding-bottom: 20rpx;
+}
+
+.detail-daily_avg{
+  height: 60rpx;
+  line-height: 60rpx;
+}

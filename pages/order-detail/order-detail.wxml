@@ -109,7 +109,7 @@
                     </view>
                     <view class="flex-grow-0" style="text-align: right">
                         <view>×{{item.num}}</view>
-                        <view style="color: #ff4544">￥：{{item.total_price}}</view>
+                        <view style="color: #ff4544">￥{{item.total_price}}</view>
                     </view>
                 </view>
                 <view wx:if="{{item.order_refund_enable==1}}">

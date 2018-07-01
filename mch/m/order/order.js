@@ -3,7 +3,7 @@ var t = require("../../../api.js"),
 Page({
     data: {
         status: 1,
-        show_menu: !1,
+        show_menu: false,
         order_list: [],
         no_orders: !1,
         no_more_orders: !1
@@ -11,6 +11,7 @@ Page({
     onLoad: function(t) {
         e.pageOnLoad(this);
         var a = this;
+        debugger;
         a.setData({
             status: parseInt(t.status || 1),
             loading_more: !0

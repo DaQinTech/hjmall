@@ -151,6 +151,17 @@ Page({
             }
         }), !1);
     },
+    gotoStore: function () {
+      var store = wx.getStorageSync("store");
+      console.log(store.locations);
+      var loc = store.locations.split(',');
+      wx.openLocation({
+        latitude: Number(loc[1]),
+        longitude: Number(loc[0]),
+        name: store.name,
+        address: store.address
+      })
+    },
     closeCouponBox: function(t) {
         this.setData({
             get_coupon_list: ""

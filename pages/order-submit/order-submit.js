@@ -3,7 +3,7 @@ var t = require("../../api.js"), a = getApp(), e = "", i = "", s = require("../.
 Page({
     data: {
         total_price: 0,
-        address: null,
+        address: null, 
         express_price: 0,
         content: "",
         offline: 0,
@@ -209,6 +209,7 @@ Page({
                     var a = [], e = t.data.coupon_list;
                     for (var i in e) null != e[i] && a.push(e[i]);
                     var s = t.data.shop_list, d = {};
+                    console.log(t.data.goods_card_list);
                     s && 1 == s.length && (d = s[0]), t.data.is_shop && (d = t.data.is_shop), o.setData({
                         total_price: t.data.total_price || 0,
                         goods_list: t.data.list || null,
